@@ -1,6 +1,8 @@
 import { notFound } from 'next/navigation';
 import { getDb } from '@/lib/db';
 import AddToCartButton from '@/components/AddToCartButton';
+
+export const dynamic = 'force-dynamic';
 const rupiah = n => new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', maximumFractionDigits: 0 }).format(n);
 export default async function ProductDetail({ params }) {
   const id = Number(params.id);
