@@ -1,6 +1,8 @@
 import { getDb } from '@/lib/db';
 import ProductCard from '@/components/ProductCard';
 
+export const dynamic = 'force-dynamic';
+
 export default async function Home({ searchParams }) {
   const q = (searchParams?.q || '').toLowerCase();
   const category = searchParams?.category || '';
