@@ -1,5 +1,7 @@
 import { getDb } from '@/lib/db';
 import { addProduct, deleteProduct } from '@/lib/actions';
+
+export const dynamic = 'force-dynamic';
 const rupiah = n => new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', maximumFractionDigits: 0 }).format(Number(n));
 const inputCls = 'w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500';
 export default async function AdminPage() {
