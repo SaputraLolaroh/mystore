@@ -18,9 +18,6 @@ export default function LoginPage({ searchParams }) {
         <button className="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700">
           Masuk
         </button>
-        <p className="text-xs text-gray-400 text-center">
-          Akun demo admin: admin@mystore.com / admin123
-        </p>
       </form>
 
       <form action={register} className="bg-white border rounded-xl p-6 space-y-4">
@@ -30,9 +27,9 @@ export default function LoginPage({ searchParams }) {
         <input
           type="password"
           name="password"
-          placeholder="Password (min. 6 karakter)"
+          placeholder="Password (min. 8 karakter)"
           required
-          minLength={6}
+          minLength={8}
           className={inputCls}
         />
         <button className="w-full bg-gray-900 text-white py-2 rounded-lg hover:bg-black">
